@@ -56,26 +56,26 @@ print (6 % 2) # 0
 необходимо вывести на экранн сумму которая останется у пользователя после выплат.
 
 '''
-poluchka = int(input("введите сумму зарплаты"))
-dolgi = int(input("ввещдите сумму ежемесячного платежа в банке"))
-komunalka = int(input("Введите сумму звдолженности за коммунальные услуги"))
+#poluchka = int(input("введите сумму зарплаты"))
+#dolgi = int(input("ввещдите сумму ежемесячного платежа в банке"))
+#komunalka = int(input("Введите сумму звдолженности за коммунальные услуги"))
 #print(sum([dolgi,komunalka,poluchka]))
-print(poluchka - dolgi - komunalka)
+#print(poluchka - dolgi - komunalka)
 
 #Условные конструкции
-age = int(input("Введите ваш возраст:"))
+#age = int(input("Введите ваш возраст:"))
 #if (условие) == True:
 # функция действие
-if 0< age < 10 :
-    print("ты еще малыш")
-elif age < 20 and age >10 :
-    print("ты еще подросток")
-elif age < 45 and age >10 :
-    print("ты молодеж")
-elif age < 100 and age >10 :
-    print("ты уже пенсионер")
-else:
-    print("некорректный возраст")
+#if 0< age < 10 :
+    #print("ты еще малыш")
+#elif age < 20 and age >10 :
+    #print("ты еще подросток")
+#elif age < 45 and age >10 :
+    #print("ты молодеж")
+#elif age < 100 and age >10 :
+    #print("ты уже пенсия")
+#else:
+    #print("некорректный возраст")
 #задание 1
 #пользователь вводит с клавиатуры три числа. в зависимости от выбора пользователя программа выводит на экран сумму
 #трех чисел или произведение трех чисел
@@ -84,8 +84,13 @@ else:
 #tretye = int(input("введите третье число"))
 #print(sum([pervoe,vtoroe,tretye]))
 #второе
-pervoe = int(input("введите первое число:"))
-vtoroe = int(input("введите второе число"))
-tretye = int(input("введите третье число"))
+#pervoe = int(input("введите первое число:"))
+#vtoroe = int(input("введите второе число"))
 
-
+n = int(input("Введите число: "))
+if  n % 5 and  n % 3 == 0:
+    print("FIZZ BZZ")
+elif n % 5 == 0:
+    print("BZZ")
+elif n % 3 == 0:
+    print("Fizz")
